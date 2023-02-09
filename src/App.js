@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import './App.css';
-import Auth from "./Auth";
+import './Component/Auth/Auth.css';
+import Auth from "./Component/Auth/Auth";
 import React from 'react';
 
 function App() {
