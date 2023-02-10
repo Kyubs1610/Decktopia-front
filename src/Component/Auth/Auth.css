@@ -12,8 +12,8 @@ body{
   }
   
   .Auth-form {
-    width: 420px;
-    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    width: 320px;
+    box-shadow: 0 0 20px 3px #fd149d;
     padding-top: 30px;
     padding-bottom: 20px;
     border-radius: 8px;
@@ -24,6 +24,7 @@ body{
     padding-left: 12%;
     padding-right: 12%;
     background-color: #2B2945;
+    
   }
   
   .Auth-form-title {
@@ -38,4 +39,10 @@ body{
     font-size: 14px;
     font-weight: 600;
     
+  }
+  .back{
+    height: 80vh;
+    box-shadow: 0 0 20px 3px #fd149d;
+    border-radius: 8px;
+   
   }

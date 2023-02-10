@@ -1,11 +1,16 @@
 import React from "react"
 import "./Auth.css"
+import image from "../../Asset/card_and_pack/back.png"
+import logo from '../../Asset/logo/logoB-removebg-preview.png'
 
 export default function Auth() {
 
      return (
-      < div className="Auth-form-container">
-        <form className="Auth-form">
+      <div> 
+        <img src={logo} alt="logo" className="logo"/>
+    <div className="Auth-form-container">
+      <img src={image} alt="back" className="back"/>
+         <form className="Auth-form">
           <div className="Auth-form-content">
             <h3 className="Auth-form-title">Sign In</h3>
             <div className="text-center">
@@ -30,6 +35,7 @@ export default function Auth() {
             </p>
           </div>
         </form>
+      </div>
       </div>
     )
   }
