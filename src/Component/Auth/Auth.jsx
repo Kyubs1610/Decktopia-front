@@ -1,13 +1,11 @@
 import React from "react"
 import "./Auth.css"
 import image from "../../Asset/card_and_pack/back.png"
-import logo from '../../Asset/logo/logoB-removebg-preview.png'
 
 export default function Auth() {
 
      return (
-      <div> 
-        <img src={logo} alt="logo" className="logo"/>
+  <div> 
     <div className="Auth-form-container">
       <img src={image} alt="back" className="back"/>
          <form className="Auth-form">
