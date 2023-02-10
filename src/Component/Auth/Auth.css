@@ -8,6 +8,7 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    margin-top: 50px;
     
   }
   
@@ -41,7 +42,7 @@ body{
     
   }
   .back{
-    height: 80vh;
+    height: 20rem;
     box-shadow: 0 0 20px 3px #fd149d;
     border-radius: 8px;
    
