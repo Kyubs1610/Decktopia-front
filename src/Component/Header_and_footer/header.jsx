@@ -8,7 +8,7 @@ export default function Header() {
      <div> 
 <nav>
 
-  <img src={logo} alt="logo" className="logo"/>
+  <img src={logo} alt="logo" className="logonav"/>
 
 <ul class="menu">
   
