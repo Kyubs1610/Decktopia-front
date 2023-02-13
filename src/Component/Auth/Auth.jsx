@@ -14,11 +14,11 @@ export default function Auth() {
             <div className="text-center">
              
             </div>
-            <div class="input-group">
-  <input required="" type="text" name="text" autocomplete="off" class="input"/>
-  <label class="user-label">First Name</label> <br/><br/>
-  <input required="" type="text" name="text" autocomplete="off" class="input"/>
-  <label class="user-label">Password</label>
+            <div className="input-group">
+  <input required="" type="text" name="text" autoComplete="off" className="input"/>
+  <label className="user-label">First Name</label> <br/><br/>
+  <input required="" type="text" name="text" autoComplete="off" className="input"/>
+  <label className="user-label">Password</label>
 </div>
             <div className="form-group mt-3">
               
@@ -29,7 +29,8 @@ export default function Auth() {
               </button>
             </div><br/>
             <p className="text-center mt-2">
-              Forgot password? <a href="/auth/forgot">Reset</a>
+              <a href="/auth/signup">Sign up</a> <br />
+              <a href="/auth/forgot"> Forgot password?</a>
             </p>
           </div>
         </form>

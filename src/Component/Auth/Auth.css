@@ -18,7 +18,8 @@ body{
     padding-top: 30px;
     padding-bottom: 20px;
     border-radius: 8px;
-    background-color: #2B2945
+    background-color: #2B2945;
+    height: 20.3rem;
   }
   
   .Auth-form-content {
@@ -41,9 +42,21 @@ body{
     font-weight: 600;
     
   }
+
+  .d-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .back{
-    height: 20rem;
+    height: 20.3rem;
     box-shadow: 0 0 20px 3px #fd149d;
     border-radius: 8px;
-   
+      
+  }
+
+  p{
+    text-align: center;
+    font-size: 10px ;
   }
