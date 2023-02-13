@@ -44,10 +44,10 @@
     transform: translateY(2px);
   }
 
-  .logo{
+  .logonav{
     max-width : 100%;
-    height : auto;
-    padding: 17px;
+    height : 100%;
+    padding: 5px;
     
   } 
 
