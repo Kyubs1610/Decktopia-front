@@ -27,11 +27,11 @@ button {
 button::after {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -3px;
     left: 3%;
     width: 95%;
-    height: 40%;
-    background-color: #2B2945;
+    height: 3px;
+    background-color: rgba(43, 41, 69, 1);
     transition: 0.5s;
     transform-origin: center;
 }
@@ -40,11 +40,11 @@ button::before {
     content: "";
     transform-origin: center;
     position: absolute;
-    top: 80%;
+    bottom: -3px;
     left: 3%;
     width: 95%;
-    height: 40%;
-    background-color: #2B2945;
+    height: 3px;
+    background-color: rgba(43, 41, 69, 1);
     transition: 0.5s;
 }
   
@@ -53,7 +53,8 @@ button:hover::before, button:hover::after {
 }
   
 button:hover {
-    box-shadow: inset 0px 0px 15px #02EEFB;
+    box-shadow: inset 0px 0px 15px #02EEFB, 
+                0px 0px 15px #02EEFB;
 }
 
   /* button */
@@ -85,6 +86,12 @@ button:hover {
 .input:focus, input:valid {
     outline: none;
     border: 1.5px solid #02EEFB;
+}
+
+.input:focus, .input:focus~label{
+    box-shadow: inset 0px 0px 15px #02EEFB,
+                0px 0px 15px #02EEFB;
+    transition: 0.5s;
 }
    
 .input:focus ~ label, input:valid ~ label {
