@@ -1,6 +1,7 @@
 import './header.css';
 import React from 'react';
 import logo from '../../Asset/logo/logoB-removebg-preview.png'
+import {Link} from 'react-router-dom';
 
 export default function Header() {
 
@@ -12,9 +13,9 @@ export default function Header() {
 
 <ul className="menu">
   
-  <li><a href="#home">Home</a></li>
-  <li><a href="#collection">Pack</a></li>
-  <li><a href="#profile">Profile</a></li>
+  <li><Link to="/">Home</Link></li>
+  <li><Link to="/">Pack</Link></li>
+  <li><Link to="/profilePage">Profile</Link></li>
 </ul>
 </nav>
         </div>
