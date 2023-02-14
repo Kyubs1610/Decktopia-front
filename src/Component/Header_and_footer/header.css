@@ -18,10 +18,10 @@
     z-index: 1;
     background-color: #2B2945;
    
-    box-shadow: 0px 1px 2px #02EEFB, 
+    /* box-shadow: 0px 1px 2px #02EEFB, 
                 0px 2px 4px #02EEFB, 
                 0px 4px 6px #02EEFB, 
-                0px 6px 16px #02EEFB; 
+                0px 6px 16px #02EEFB;  */
   }
  .menu{
     display: flex;
