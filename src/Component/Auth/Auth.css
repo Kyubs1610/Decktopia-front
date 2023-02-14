@@ -13,14 +13,12 @@
     max-width: 500px;
     padding: 0;
     height: 400px;
-    /* box-shadow: 0 0 20px 3px #fd149d; */
     border-radius: 8px;
-    background-color: rgba(43, 41, 69, 0.3);
     z-index: 0;
 }
   
 .Auth-form-content {
-    background-color: rgba(43, 41, 69, 0.3);
+    background-color: rgba(43, 41, 69, 0.4);
     width: 100%;
     height: 100%;
     display: flex;
