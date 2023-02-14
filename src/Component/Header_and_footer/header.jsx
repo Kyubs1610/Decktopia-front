@@ -15,7 +15,7 @@ export default function Header() {
   
   <li><Link to="/">Home</Link></li>
   <li><Link to="/">Pack</Link></li>
-  <li><Link to="/profilePage">Profile</Link></li>
+  <li><Link to="/profile">Profile</Link></li>
 </ul>
 </nav>
         </div>
