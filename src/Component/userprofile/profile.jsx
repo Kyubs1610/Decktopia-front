@@ -1,10 +1,12 @@
-import "./profile.css"
-import React, { useState } from "react";
+import "./profile.css";
+import React, { useState, useRef } from "react";
+import Header from "..//Header_and_footer/header";
+import image from "..//..//..//src/Asset/card_and_pack/back_empty.png";
 
 function ProfilePage() {
   const [avatar, setAvatar] = useState(null);
   const [name, setName] = useState("");
-  const [favoriteCards, setFavoriteCards] = useState([]);
+  const fileInputRef = useRef(null);
 
   const handleAvatarChange = (event) => {
     const newAvatar = event.target.files[0];
@@ -15,44 +17,52 @@ function ProfilePage() {
     setName(event.target.value);
   };
 
-  const handleFavoriteCardsChange = (event) => {
-    const newFavoriteCards = event.target.value.split(",");
-    setFavoriteCards(newFavoriteCards);
+  const handleAvatarClick = () => {
+    fileInputRef.current.click();
   };
+  
 
   return (
     <div>
-      <h1>Profile Page</h1>
-      <div>
-        <label htmlFor="avatar-input">Upload Profile Picture</label>
+        <Header/> <br/><br/><br/><br/>
+     <div>
+     <div className="profileContainer"> 
+        <label htmlFor="avatar-input"></label>
+        <div className="avatar-container" onClick={handleAvatarClick}>
+          {avatar && <img className="avatar" src={URL.createObjectURL(avatar)} alt="Avatar" />}
+          {!avatar && (
+            <div className="avatar-placeholder">
+              <div className="avatar-text">Deckpicture</div>
+            </div>
+          )}
+        </div>
         <input
           id="avatar-input"
           type="file"
           accept="image/*"
           onChange={handleAvatarChange}
+          ref={fileInputRef}
+          style={{ display: "none" }}
         />
-        {avatar && <img src={URL.createObjectURL(avatar)} alt="Avatar" />}
-      </div>
+      
       <div>
-        <label htmlFor="name-input">Name/Pseudo</label>
+        <label htmlFor="name-input">Pseudo</label>
         <input id="name-input" type="text" value={name} onChange={handleNameChange} />
+        {name.length > 0 && <div className="name-preview">Hello {name}</div>}
+      </div>
+      </div>
       </div>
       <div>
-        <label htmlFor="favorite-cards-input">Top 3 Favorite Cards</label>
-        <input
-          id="favorite-cards-input"
-          type="text"
-          value={favoriteCards.join(",")}
-          onChange={handleFavoriteCardsChange}
-        />
+        
       </div>
       <div>
-        <h2>Favorite Cards</h2>
-        <ul>
-          {favoriteCards.map((card) => (
-            <li key={card}>{card}</li>
-          ))}
-        </ul>
+        <h2 className="justifyCenter"> Best Deck </h2> 
+       
+        <div className="collection-container">
+          <img src={image} className="collection-card" alt="empty card"/>
+          <img src={image} className="collection-card" alt="empty card"/>
+          <img src={image} className="collection-card" alt="empty card"/>
+        </div>
       </div>
     </div>
   );
