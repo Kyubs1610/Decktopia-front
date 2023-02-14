@@ -26,6 +26,10 @@
       "react-app/jest"
     ]
   },
+  "files": [
+    "particles.js",
+    "particles.min.js"
+],
   "browserslist": {
     "production": [
       ">0.2%",

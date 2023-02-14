@@ -1,5 +1,7 @@
+body {
+    background-color: #1D1231;
+}
 
-  
 .Auth-form-container {
     display: flex;
     justify-content: center;
@@ -7,18 +9,18 @@
     width: 100vw;
     height: 100vh;
 }
-  
+
 .Auth-form {
     width: 50%;
     max-width: 500px;
     padding: 0;
-    height: 400px;
+    height: 500px;
     box-shadow: 0 0 20px 3px #fd149d;
     border-radius: 8px;
     background-color: #2B2945;
     z-index: 0;
 }
-  
+
 .Auth-form-content {
     background-color: #2B2945;
     width: 100%;
@@ -29,7 +31,7 @@
     align-items: center;
     border-radius: 8px;
 }
-  
+
 .Auth-form-title {
     text-align: center;
     font-size: 24px;
@@ -37,9 +39,9 @@
     font-weight: 800;
 }
 
-.input-group{
+.input-group {
     width: 60%;
-    height: 120px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,25 +50,26 @@
 
 
 
-#username, #pass{
+#username,
+#pass, #email {
     width: 100%;
 }
 
 input {
     width: 100%;
 }
-  
+
 label {
     font-size: 14px;
     font-weight: 600;
 }
 
-.back{
+.back {
     height: 20rem;
     box-shadow: 0 0 20px 3px #fd149d;
     border-radius: 8px;
 }
 
-#password{
+#password {
     display: flex;
 }
