@@ -56,7 +56,7 @@ function ProfilePage() {
         
       </div>
       <div>
-        <h2 className="justifyCenter"> Best Deck </h2> 
+        <h3 className="justifyCenter"> Best Deck </h3> 
        
         <div className="collection-container">
           <img src={image} className="collection-card" alt="empty card"/>
